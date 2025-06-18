@@ -21,7 +21,7 @@
     padding: 28px 16px;
     display: flow-root;
     min-height: 450px;
-    block-size: 450px;
+    min-block-size: 450px;
 
     .group {
       float: left;
@@ -139,6 +139,17 @@
       color: var(--primary);
     }
   }
+}
+.term {
+  margin-top: 20px;
+  h2 {
+    margin-bottom: 16px;
+  }
+  .card {
+    margin-top: 12px;
+  }
+
+  padding: 16px;
 }
 /* 
 .header {

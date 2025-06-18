@@ -8,6 +8,8 @@
   font-size: 0.875rem;
   line-height: 1.5;
   letter-spacing: -0.02em;
+  align-items: start;
+  margin-top: 12px;
 
   em {
     display: block;
@@ -19,7 +21,7 @@
   }
 
   &.cross {
-    .card-thumbnail {
+    img {
       order: -1;
     }
   }
