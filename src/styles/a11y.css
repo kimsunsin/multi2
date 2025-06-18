@@ -12,7 +12,7 @@
 }
 
 /* 숨김 콘텐츠*/
-.sr-only {
+.a11y-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
