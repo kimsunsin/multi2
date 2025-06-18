@@ -3,7 +3,6 @@
   --size: 940px;
 
   min-width: calc(var(--size) + 20px);
-  min-inline-size: calc(var(--size) + 20px);
 
   .header,
   .visual,
@@ -11,55 +10,48 @@
   .slogan,
   .footer {
     width: var(--size);
-    inline-size: var(--size);
     margin-left: auto;
     margin-right: auto;
-    margin-inline: auto;
   }
 
   .main {
     padding: 28px 16px;
     display: flow-root;
     min-height: 450px;
-    min-block-size: 450px;
 
     .group {
       float: left;
       height: 100%;
-      block-size: 100%;
 
       &:nth-child(n + 2) {
         margin-left: 44px;
-        margin-inline-start: 44px;
       }
     }
 
     .group1 {
       width: 250px;
-      inline-size: 250px;
     }
 
     .group2 {
       width: 380px;
-      inline-size: 380px;
     }
 
     .group3 {
       width: 190px;
-      inline-size: 190px;
     }
   }
 
   .footer-container {
     width: 100%;
-    inline-size: 100%;
   }
 }
 
+/* 로그인 */
 .login {
   --start: var(--secondary);
   --end: var(--primary);
   --shadow: var(--gray-500);
+
   background-color: var(--end);
   background-image: radial-gradient(circle at right top, var(--start), var(--end));
   box-shadow: 5px 5px 0 0 var(--shadow);
@@ -96,6 +88,7 @@
       height: 100%;
     }
   }
+
   hr {
     margin: 10px 0 4px;
     border-top: 1px solid var(--shadow);
@@ -104,14 +97,15 @@
   ul {
     display: flex;
     justify-content: space-between;
-  }
-  li {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    font-size: 0.8125rem;
-    line-height: 1.5;
-    initial-letter: -0.02em;
+
+    li {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
 
     span {
       color: var(--primary);
@@ -125,11 +119,11 @@
 
 /* 유효성 검사 배너 링크 */
 .validation {
-  /* background-color: yellow; */
   margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   .gradient {
     --size: 38px;
     --icon-size: 16px;
@@ -140,52 +134,16 @@
     }
   }
 }
+
+/* 웹 관련 용어 */
 .term {
   margin-top: 20px;
+
   h2 {
     margin-bottom: 16px;
   }
+
   .card {
     margin-top: 12px;
   }
-
-  padding: 16px;
 }
-/* 
-.header {
-  background-color: pink;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.visual {
-  background-color: lime;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.main {
-  background-color: skyblue;
-  height: 60vh;
-  block-size: 60vh;
-
-  .group {
-    background-color: hotpink;
-  }
-}
-
-.slogan {
-  background-color: orange;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-.footer-container {
-  background-color: gray;
-}
-
-.footer {
-  background-color: silver;
-  height: 10vh;
-  block-size: 10vh;
-} */
