@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카드 컴포넌트</title>
+    <link rel="shortcut icon" href="../assets/favicon/webcafe.ico" type="image/x-icon" />
+    <link rel="icon" href="../assets/favicon/webcafe.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <style>
+      .component-wrapper {
+        margin: 20px;
+        padding: 20px 50px 20px 20px;
+        border: 2px solid currentColor;
+        position: relative;
+
+        .copy {
+          background-color: var(--primary);
+          color: var(--white);
+          border: 0;
+          padding: 8px;
+          border-radius: 4px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+      }
+    </style>
+    <script type="module" src="../../styles/components/copy-component.js"></script>
+  </head>
+  <body>
+    <div class="components-wrapper">
+        <div class=""card">
+            <em>카드 제목</em>
+            <p>카드 내용 ....더미 데이터.....</p>
+            <img src="" alt=""/>
+        </div>
+        <button type="button" class="copy">복사</button>
+    </div>
+  </body>
+</html>

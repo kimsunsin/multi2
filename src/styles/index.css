@@ -1,5 +1,5 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
-@import "./components/components.css";
 @import "./a11y.css";
+@import "./components/components.css";
