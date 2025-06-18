@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카드 컴포넌트</title>
-    <link rel="shortcut icon" href="../assets/favicon/webcafe.ico" type="image/x-icon" />
-    <link rel="icon" href="../assets/favicon/webcafe.png" />
+    <link rel="shortcut icon" href="/src/assets/favicon/webcafe.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/assets/favicon/webcafe.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
     <style>
       .component-wrapper {
         margin: 20px;
-        padding: 20px 50px 20px 20px;
+        padding: 20px 80px 20px 20px;
         border: 2px solid currentColor;
         position: relative;
 
@@ -27,16 +27,34 @@
         }
       }
     </style>
-    <script type="module" src="../../styles/components/copy-component.js"></script>
+    <script type="module" src="./../copy-component.js"></script>
   </head>
   <body>
-    <div class="components-wrapper">
-        <div class=""card">
-            <em>카드 제목</em>
-            <p>카드 내용 ....더미 데이터.....</p>
-            <img src="" alt=""/>
+    <div class="component-wrapper">
+      <div class="card">
+        <div class="card-content">
+          <em>카드 제목</em>
+          <p>
+            카드 내용 - 소술코소라도 가뎠은 바아녈고 초입카 아더 피오 고느옸인 어안히고 민가팦에게 제하다. 아날은 쁘뱌사젝구궈 추즈옴 베리는데 세작논리를 안더와왭 코아이깅을 무히다어의 머볼의 허즈로
+            휘익까보삭힝이다.
+          </p>
         </div>
-        <button type="button" class="copy">복사</button>
+        <img class="card-thumbnail" src="/src/assets/webcafe/web_standards.png" srcset="/src/assets/webcafe/web_standards.webp" alt="" />
+      </div>
+      <button type="button" class="copy">복사</button>
+    </div>
+    <div class="component-wrapper">
+      <div class="card cross">
+        <div class="card-content">
+          <em>카드 제목</em>
+          <p>
+            카드 내용 - 소술코소라도 가뎠은 바아녈고 초입카 아더 피오 고느옸인 어안히고 민가팦에게 제하다. 아날은 쁘뱌사젝구궈 추즈옴 베리는데 세작논리를 안더와왭 코아이깅을 무히다어의 머볼의 허즈로
+            휘익까보삭힝이다.
+          </p>
+        </div>
+        <img class="card-thumbnail" src="/src/assets/webcafe/web_standards.png" srcset="/src/assets/webcafe/web_standards.webp" alt="" />
+      </div>
+      <button type="button" class="copy">복사</button>
     </div>
   </body>
 </html>
