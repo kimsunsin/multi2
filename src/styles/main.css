@@ -33,7 +33,7 @@
     }
 
     .group2 {
-      width: 380px;
+      width: 300px;
     }
 
     .group3 {
@@ -145,5 +145,36 @@
 
   .card {
     margin-top: 12px;
+  }
+}
+
+.search {
+  /* background-color: yellow;
+   */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 12px 24px 8px;
+  border-bottom: 0;
+
+  form {
+    background-color: #ffc;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+
+    .input {
+      display: contents;
+    }
+    label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+      /* color: red; */
+    }
+    .button {
+      flex: 0 0 auto;
+    }
   }
 }
