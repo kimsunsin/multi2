@@ -1,7 +1,6 @@
 /* 본문 배경이미지 및 그라디언트 */
 body {
   background-image: url(/src/assets/webcafe/bg_flower.png), linear-gradient(#ccc 0%, #eee 60%, #fff 70%, #fff 100%);
-  /* background-image: url(/src/assets/webcafe/bg_flower.webp); */
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
@@ -57,7 +56,6 @@ body {
 /* 헤더 */
 .header {
   background: var(--white);
-  /* box-shadow: 0 0 0 1px black; */
   padding: 8px 30px 20px;
   display: grid;
   grid-template-columns: 205px repeat(6, 1fr);
@@ -106,7 +104,25 @@ body {
       }
 
       button {
-        padding: 10px;
+        border: 0;
+        background: transparent;
+        padding: 15px 0;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1rem;
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+
+        &:focus-visible {
+          box-shadow: none;
+        }
+
+        &:hover {
+          color: var(--accent-yellow);
+        }
+      }
+
+      [aria-selected="true"] {
+        color: var(--accent-yellow);
       }
     }
 
