@@ -383,22 +383,96 @@ body {
   }
 }
 
-/* 인기사이트 */
+/* 신규이벤트 및 관련사이트 컨테이너 */
+.event-related {
+  padding: 12px;
+}
+
+/* 신규 이벤트 */
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  justify-content: space-between;
+
+  .button-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+
+    button {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      color: var(--primary);
+    }
+  }
+
+  figure {
+    display: contents;
+
+    img,
+    figcaption {
+      width: 100%;
+    }
+
+    em {
+      font-style: normal;
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+/* 관련 사이트 */
+.related {
+  border-top: 1px solid var(--gray-700);
+  margin-top: 10px;
+  padding-top: 10px;
+
+  ul {
+    margin-top: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-700);
+    border-radius: 4px;
+    padding: 10px;
+    height: 45px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      height: auto;
+    }
+
+    li {
+      height: 25px;
+      align-content: center;
+      margin-top: 10px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* 인기 사이트 */
 .favorite {
   --spacing: 12px;
-  padding: var(--spacing);
+
   position: relative;
+  padding: var(--spacing);
+  margin-top: 20px;
 
   .favorite-ranking {
     margin-top: 12px;
-    counter-reset: unset;
+    counter-reset: number;
     display: flex;
     flex-direction: column;
     gap: 8px;
 
     li {
       counter-increment: number;
-
       display: flex;
       align-items: center;
       gap: 4px;
@@ -414,19 +488,21 @@ body {
         border-radius: 4px;
       }
     }
+
     .up,
     .stop,
     .down {
       width: 9px;
       height: 11px;
-      background-color: yellow;
       margin-left: auto;
       background-image: url(/src/assets/webcafe/rank.png);
       background-repeat: no-repeat;
     }
+
     .stop {
       background-position: 0 50%;
     }
+
     .down {
       background-position: 0 100%;
     }
@@ -440,6 +516,7 @@ body {
     letter-spacing: -0.02em;
   }
 }
+
 /* 푸터 */
 .footer-container {
   background-image: linear-gradient(#ccc 0%, #eee 60%, #fff 70%, #fff 100%);
